@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Mechanic.repair.RepairController">
+    <children>
+        <Label layoutX="224.0" layoutY="14.0" text="Создание заявки на ремонт">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="60.0" text="ID Механика:">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="40.0" layoutY="110.0" text="Марка:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="160.0" text="Модель:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="210.0" text="Тип ремонта:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="mechID" editable="false" layoutX="161.0" layoutY="58.0" prefHeight="30.0" prefWidth="139.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="brand" layoutX="161.0" layoutY="108.0" prefHeight="30.0" prefWidth="139.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="model" layoutX="161.0" layoutY="158.0" prefHeight="30.0" prefWidth="139.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="repairType" layoutX="161.0" layoutY="208.0" prefHeight="30.0" prefWidth="139.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label layoutX="328.0" layoutY="61.0" text="ФИО клиента:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="328.0" layoutY="136.0" text="Номер паспорта:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="211.0" text="Номер телефона:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="clientFIO" layoutX="467.0" layoutY="58.0" prefHeight="30.0" prefWidth="201.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="passportNumber" layoutX="467.0" layoutY="133.0" prefHeight="30.0" prefWidth="201.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="number" layoutX="467.0" layoutY="208.0" prefHeight="30.0" prefWidth="201.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button layoutX="300.0" layoutY="249.0" mnemonicParsing="false" onAction="#createRepair" text="Создать">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>

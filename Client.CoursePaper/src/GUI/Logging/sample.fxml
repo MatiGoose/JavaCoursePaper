@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Logging.LoginController">
+   <children>
+      <Button fx:id="Login_Button" layoutX="220.0" layoutY="185.0" mnemonicParsing="false" onAction="#LoginButton" text="Login" />
+      <Label layoutX="82.0" layoutY="92.0" text="Логин:" />
+      <Label layoutX="231.0" layoutY="43.0" text="Вход" />
+      <Label layoutX="78.0" layoutY="141.0" text="Пароль:" />
+      <TextField fx:id="User_Login" layoutX="168.0" layoutY="87.0" />
+      <TextField fx:id="User_Password" layoutX="168.0" layoutY="136.0" />
+   </children>
+</Pane>

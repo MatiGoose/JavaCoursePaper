@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Manager.orderEditor.OrderEditorController">
+    <children>
+        <Label layoutX="142.0" layoutY="14.0" text="Редактирование заказа">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="112.0" layoutY="61.0" text="Код клиента:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="112.0" layoutY="108.0" text="Код автомобиля:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Button layoutX="209.0" layoutY="161.0" mnemonicParsing="false" onAction="#editOrder" text="Применить" />
+        <TextField fx:id="clientID" layoutX="248.0" layoutY="61.0" />
+        <TextField fx:id="carID" layoutX="250.0" layoutY="108.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" accessibleText="Получить список автомобилей" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Mechanic.main.MainMechanicController">
+    <children>
+        <Label fx:id="mechanicLabel" layoutX="34.0" layoutY="32.0" prefHeight="27.0" prefWidth="90.0" text="Механик:">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="closeButton" layoutX="810.0" layoutY="647.0" mnemonicParsing="false" onAction="#closeApp" text="Выход" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="mechanicID" layoutX="34.0" layoutY="72.0" text="Label">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="repairTable" layoutX="25.0" layoutY="236.0" prefHeight="450.0" prefWidth="850.0">
+            <columns>
+                <TableColumn fx:id="repairID" prefWidth="104.0" text="Код ремонта" />
+                <TableColumn fx:id="mechID" prefWidth="110.0" text="ID Механика" />
+                <TableColumn fx:id="clientID" prefWidth="93.0" text="ID Клиента" />
+                <TableColumn fx:id="brand" prefWidth="72.0" text="Марка" />
+                <TableColumn fx:id="model" prefWidth="92.0" text="Модель" />
+                <TableColumn fx:id="repairType" prefWidth="111.0" text="Тип ремонта" />
+                <TableColumn fx:id="statusMech" prefWidth="106.0" text="Выполнен:" />
+                <TableColumn fx:id="statusMan" editable="false" prefWidth="161.0" text="Проверен:" />
+            </columns>
+        </TableView>
+        <ToolBar layoutX="25.0" layoutY="201.0" prefHeight="27.0" prefWidth="850.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#getRepaitList" text="Получить список ремонтов" />
+                <Button mnemonicParsing="false" onAction="#getRepaitList" text="Обновить список" />
+                <Button fx:id="createRepair" mnemonicParsing="false" onAction="#createRepair" text="Создать заявку на ремонт" />
+            </items>
+        </ToolBar>
+        <Button layoutX="607.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="68.0" prefWidth="161.0" text="Выйти из аккаунта">
+
+        </Button>
+        <Button layoutX="780.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="68.0" prefWidth="116.0" text="Выйти">
+
+        </Button>
+    </children>
+</Pane>

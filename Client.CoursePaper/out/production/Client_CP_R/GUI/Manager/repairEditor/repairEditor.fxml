@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Manager.repairEditor.repairEditorController">
+    <children>
+        <Label layoutX="89.0" layoutY="14.0" text="Редактирование записи о ремонте ">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="62.0" text="Марка авто:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="112.0" text="Модель авто:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="162.0" text="Тип ремонта:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="brand" layoutX="245.0" layoutY="62.0" prefHeight="25.0" prefWidth="167.0" />
+        <TextField fx:id="model" layoutX="245.0" layoutY="113.0" prefHeight="25.0" prefWidth="167.0" />
+        <TextField fx:id="repairType" layoutX="245.0" layoutY="162.0" prefHeight="25.0" prefWidth="167.0" />
+        <Button layoutX="206.0" layoutY="211.0" mnemonicParsing="false" onAction="#editRepair" text="Применить" />
+    </children>
+</AnchorPane>

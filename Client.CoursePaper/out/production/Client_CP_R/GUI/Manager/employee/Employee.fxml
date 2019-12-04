@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Manager.employee.EmployeeController">
+    <children>
+        <Label layoutX="207.0" layoutY="14.0" text="Добавление нового сотрудника">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="66.0" text="ФИО сотрудника:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="125.0" text="Оклад сотрудника:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fio" layoutX="182.0" layoutY="66.0" />
+        <TextField fx:id="salary" layoutX="182.0" layoutY="125.0" />
+        <Label layoutX="371.0" layoutY="66.0" text="Логин:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="371.0" layoutY="125.0" text="Пароль:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="login" layoutX="439.0" layoutY="66.0" />
+        <Label layoutX="189.0" layoutY="182.0" text="Тип пользователя:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="type" layoutX="344.0" layoutY="182.0" prefWidth="150.0" />
+        <Button layoutX="298.0" layoutY="249.0" mnemonicParsing="false" onAction="#addUser" text="Добавить">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="pass" layoutX="439.0" layoutY="125.0" />
+    </children>
+</Pane>

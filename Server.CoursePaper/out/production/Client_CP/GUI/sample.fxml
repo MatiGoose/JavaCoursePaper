@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <children>
+      <Label layoutX="30.0" layoutY="34.0" text="Данные сервера" />
+      <Label layoutX="30.0" layoutY="76.0" text="Адрес:" />
+      <Label layoutX="30.0" layoutY="143.0" text="Данные базы данных" />
+      <Label layoutX="30.0" layoutY="184.0" text="Название:" />
+      <Label layoutX="294.0" layoutY="76.0" text="Порт:" />
+      <Label layoutX="294.0" layoutY="218.0" text="Пароль:" />
+      <Label layoutX="30.0" layoutY="218.0" prefHeight="17.0" prefWidth="107.0" text="Имя пользователя:" />
+      <Label layoutX="294.0" layoutY="184.0" text="Порт:" />
+      <Button fx:id="Server_Launch" layoutX="390.0" layoutY="260.0" mnemonicParsing="false" onAction="#LaunchServer" prefHeight="25.0" prefWidth="130.0" text="Запуск сервера" />
+      <TextField fx:id="Server_Address" layoutX="147.0" layoutY="72.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="Server_Port" layoutX="347.0" layoutY="72.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="DataBase_Name" layoutX="147.0" layoutY="180.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="DataBase_Port" layoutX="347.0" layoutY="180.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="DataBase_Password" layoutX="347.0" layoutY="214.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="DataBase_Username" layoutX="147.0" layoutY="214.0" prefHeight="25.0" prefWidth="113.0" />
+      <Button fx:id="Server_Shutdown" disable="true" layoutX="390.0" layoutY="260.0" mnemonicParsing="false" onAction="#ShutdownServer" prefHeight="25.0" prefWidth="130.0" text="Выключить сервер" />
+   </children>
+</Pane>
